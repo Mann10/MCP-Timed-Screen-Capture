@@ -18,5 +18,5 @@ build-backend="setuptools.build_meta"
 [tool.setuptools]
 package-dir = {""="scr"}
 
-[tool.setuptools.package.find]
+[tool.setuptools.packages.find]
 where=["scr"]
