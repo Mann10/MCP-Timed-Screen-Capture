@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "mcp[cli]>=1.16.0",
     "pyautogui>=0.9.54",
+    "pillow"
 ]
 [project.scripts]
 mcp-server="mcpserver.__main__:main"
