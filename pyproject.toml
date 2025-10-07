@@ -1,0 +1,22 @@
+[project]
+name = "screenshotmcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.16.0",
+    "pyautogui>=0.9.54",
+]
+[project.scripts]
+mcp-server="mcpserver.__main__:main"
+
+[build-system]
+requires=["setuptools"]
+build-backend="setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {""="scr"}
+
+[tool.setuptools.package.find]
+where=["scr"]
